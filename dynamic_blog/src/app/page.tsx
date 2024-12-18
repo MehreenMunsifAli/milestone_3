@@ -1,13 +1,19 @@
 "use client";
 import { useEffect, useState } from "react";
 import BlogComponent from "../components/Blog";
-// import Main from "../components/Main";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 
+interface PostType {
+  id: number;
+  title: string;
+  body: string;
+  tags: string[];
+}
+
 export default function Home() {
   
-  const [posts, setPosts] = useState<any[]>([]);
+  const [posts, setPosts] = useState<PostType[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {

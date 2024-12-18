@@ -52,9 +52,10 @@ export default function PostPage(){
                 const commentsData = await commentRes.json();
                 setComments(commentsData.comments)
 
-            } catch (err: any){
-                console.error("Error fetching post: ", err);
-                setError(err.message);
+            } catch (err){
+                const error = err as Error;
+                console.error("Error fetching post: ", error);
+                setError(error.message);
 
             }
         }
