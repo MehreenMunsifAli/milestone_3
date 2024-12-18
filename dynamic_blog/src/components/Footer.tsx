@@ -1,14 +1,9 @@
 "use client";
-import { FaLinkedin, FaMoon, FaSun } from "react-icons/fa";
-import { useEffect, useState } from "react";
-import Link from "next/link";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPinterest } from "react-icons/fa";
-import { Great_Vibes } from "next/font/google";
+import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
 import SocialIcon from "./Socialcon";
 
-const greatVibes = Great_Vibes({ subsets: ['latin'], weight: ["400", "400"] });
 
 export default function Footer() {
 

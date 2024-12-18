@@ -1,4 +1,4 @@
-import { Card, CardTitle, CardDescription, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
+import { Card, CardTitle, CardDescription, CardContent, CardHeader } from "@/components/ui/card"
 
 type BlogData = {
     blogName: string,
