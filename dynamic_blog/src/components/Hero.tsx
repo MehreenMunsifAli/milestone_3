@@ -7,7 +7,7 @@ export default function Hero() {
             <h5 className="tracking-wide ">A DAILY BLOG</h5>
             <h1 className="mt-4 font-bold font-serif text-3xl tracking-wider">Lovely Little Things</h1>
         </div>
-        <div className="relative w-full h-[500px] lg:h-[800px]">
+        <div className="relative w-full h-[300px] lg:h-[800px]">
             <Image 
                 className="object-cover"
                 src={"/assets/images/annie-spratt-adV0u9D3NAM-unsplash.jpg"}

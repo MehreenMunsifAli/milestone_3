@@ -90,7 +90,7 @@ export default function PostPage(){
                                 {comment.user && (
                                     <div className="flex justify-between">
                                         <p> - {comment.user.username}</p>
-                                        <p><FaHeart className="inline mr-1" /> {comment.likes}</p>
+                                        <p><FaHeart className="inline mr-1 text-red-700" /> {comment.likes}</p>
                                     </div>
                                 )}
                             </div>

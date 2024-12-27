@@ -11,10 +11,10 @@ export default function BlogComponent({blogName, blogDescription, blogContent}: 
     return(
             <Card className="flex flex-col text-center bg-orange-200 dark:bg-black transform transition-transform duration-200 hover:scale-105 pb-6">
                 <CardHeader className="text-center">
-                    <CardTitle className="leading-tight tracking-normal ">{blogName}</CardTitle>
+                    <CardTitle className="leading-tight tracking-normal text-lg">{blogName}</CardTitle>
                     <CardDescription className="text-xs mt-2">Type: {blogDescription}</CardDescription>
                 </CardHeader>
-                <CardContent className="line-clamp-3 leading-tight pb-0">{blogContent}</CardContent>
+                <CardContent className="line-clamp-2 md:line-clamp-3 leading-tight pb-0">{blogContent}</CardContent>
             </Card>
     )
 }

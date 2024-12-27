@@ -42,10 +42,10 @@ export default function Home() {
         ) :  (
           <>
             <h2 className="text-2xl font-bold text-center mb-8">Blogs</h2>
-            <div className="flex flex-wrap justify-around gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-12 px-6">
               {posts.map((data) => {
                 return (
-                  <div key={data.id} className=" md:w-2/3 w-4/5 ">
+                  <div key={data.id} className=" md:col-span-6 ">
                     <Link href={`/blog/${data.id}`} className=" text-center no-underline">
                       <BlogComponent blogName={data.title} blogDescription={data.tags.join(", ")} blogContent={data.body} />
                     </Link>
