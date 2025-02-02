@@ -1,3 +1,4 @@
+"use client";
 import { SlHandbag } from "react-icons/sl";
 import Link from "next/link";
 import {
@@ -6,13 +7,12 @@ import {
     SheetTrigger,
   } from "@/components/ui/sheet";
   import { Menu } from "lucide-react";
-import { CartProvider, useCart } from "@/app/contexts/CartContext";
+import { useCart } from "@/app/contexts/CartContext";
 
 export default function Header() {
     const {cartCount} = useCart();
     console.log('useCart imported successfully', cartCount);
     return (
-        <CartProvider>
         <header className="container mx-auto max-w-screen-lg mt-2 bg-transparent lg:flex flex-col justify-center px-6">
             <div className="text-center h-[32px] ">
                 <p className="text-[#FF9F0D] text-[24px] font-bold ">Your Shopping Solution</p>
@@ -86,6 +86,5 @@ export default function Header() {
                 
             </div>
         </header>
-        </CartProvider>
-    )
+    );
 }
