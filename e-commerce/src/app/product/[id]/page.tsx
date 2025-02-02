@@ -2,7 +2,6 @@
 import { useCart } from "@/app/contexts/CartContext";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import { SlHandbag } from "react-icons/sl";
